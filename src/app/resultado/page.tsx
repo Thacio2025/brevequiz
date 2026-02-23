@@ -20,7 +20,6 @@ export default async function ResultadoPage({ searchParams }: ResultadoPageProps
   }
 
   const info = LOGISMOI[dominantParam as LogismoiId];
-  const formAction = "/obrigado";
 
   return (
     <main className="min-h-screen px-4 py-10 max-w-xl mx-auto flex flex-col">
@@ -44,13 +43,12 @@ export default async function ResultadoPage({ searchParams }: ResultadoPageProps
         </div>
       </div>
 
-      {/* Captura de email — Netlify Forms (redireciona para /obrigado após envio) */}
+      {/* Captura de email — Netlify Forms: POST para /__forms.html (form estático em public/__forms.html) */}
       <section className="mb-10">
         <form
             name={FORM_EMAIL_NAME}
             method="POST"
-            action={formAction}
-            data-netlify="true"
+            action="/__forms.html"
             className="space-y-3"
           >
             <input type="hidden" name="form-name" value={FORM_EMAIL_NAME} />

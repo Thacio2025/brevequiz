@@ -22,12 +22,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={crimson.variable}>
       <body className="antialiased min-h-screen font-serif">
-        {/* Form oculto para o Netlify detectar o form "ebook-lead" no build (página de resultado é dinâmica) */}
-        <form name="ebook-lead" data-netlify="true" netlify-honeypot="bot" hidden>
-          <input type="hidden" name="form-name" value="ebook-lead" />
-          <input type="email" name="email" />
-          <input type="text" name="bot" tabIndex={-1} autoComplete="off" />
-        </form>
         {children}
       </body>
     </html>

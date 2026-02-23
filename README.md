@@ -71,7 +71,7 @@ Edite **`src/app/config.ts`**: altere os valores padrão de `CTA.label` e `CTA.u
 - **Nomes e frases de resultado dos logismoi:** `src/data/logismoi.ts`
 - **Landing (título e subtítulo):** `src/app/page.tsx`
 
-O quiz é front-end; a captura de email na página de resultado usa **Netlify Forms** (nome do form: `ebook-lead`). Após o envio, o usuário é redirecionado para `/obrigado`. No painel da Netlify, em *Forms*, você verá as submissões. Para redirecionar após o envio para `/obrigado`, configure o redirect do form em *Form settings* (ou o form já usa `action="/obrigado"`).
+O quiz é front-end; a captura de email na página de resultado usa **Netlify Forms** (nome do form: `ebook-lead`). O form envia para o arquivo estático `public/__forms.html` (exigido pelo plugin Next.js da Netlify v5). No painel da Netlify, em *Forms* → form *ebook-lead* → *Form settings*, configure o redirect após envio para `/obrigado` para que o usuário veja a página de agradecimento.
 
 ---
 
