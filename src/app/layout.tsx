@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Crimson_Pro } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: "Qual é a sua batalha interior? | Quiz dos Logismoi",
   description:
     "Descubra qual pensamento te sabota. Sabedoria dos Padres do Deserto — Evágrio Pôntico e Cassiano.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

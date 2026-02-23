@@ -73,7 +73,7 @@ export default function QuizPage() {
                 key={value}
                 type="button"
                 onClick={() => handleSelect(value)}
-                className={`w-full text-left px-4 py-3 rounded-lg border-2 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:ring-offset-2 focus:ring-offset-[var(--background)] ${
+                className={`w-full text-left px-4 py-3 min-h-[44px] rounded-lg border-2 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:ring-offset-2 focus:ring-offset-[var(--background)] ${
                   isSelected
                     ? "border-[var(--ochre)] bg-[var(--ochre)]/10 text-[var(--foreground)]"
                     : "border-[var(--sand)] bg-transparent hover:border-[var(--brown-light)] text-[var(--foreground)]"
@@ -90,7 +90,7 @@ export default function QuizPage() {
         <button
           type="button"
           onClick={() => setCurrentIndex((i) => i - 1)}
-          className="mt-8 text-sm text-[var(--brown)] hover:text-[var(--foreground)]"
+          className="mt-8 min-h-[44px] flex items-center text-sm text-[var(--brown)] hover:text-[var(--foreground)]"
         >
           ← Voltar
         </button>

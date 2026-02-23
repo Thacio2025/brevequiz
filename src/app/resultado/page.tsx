@@ -27,7 +27,7 @@ export default async function ResultadoPage({ searchParams }: ResultadoPageProps
         <p className="text-sm uppercase tracking-wider text-[var(--brown-light)] mb-2">
           Seu logismoi dominante
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--foreground)] mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
           {info.name}
         </h1>
         <p className="text-lg text-[var(--brown)] text-balance leading-relaxed mb-6">
@@ -57,11 +57,11 @@ export default async function ResultadoPage({ searchParams }: ResultadoPageProps
               name="email"
               required
               placeholder="Seu melhor email"
-              className="w-full px-4 py-3 rounded-lg border-2 border-[var(--sand)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--brown-light)] focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:border-transparent"
+              className="w-full px-4 py-3 min-h-[44px] rounded-lg border-2 border-[var(--sand)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--brown-light)] focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:border-transparent text-base"
             />
             <button
               type="submit"
-              className="w-full px-6 py-3 rounded-lg bg-[var(--ochre)] text-[var(--brown)] font-semibold hover:bg-[var(--ochre-hover)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:ring-offset-2"
+              className="w-full px-6 py-3 min-h-[48px] rounded-lg bg-[var(--ochre)] text-[var(--brown)] font-semibold hover:bg-[var(--ochre-hover)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--ochre)] focus:ring-offset-2"
             >
               {FORM_EMAIL_LABEL}
             </button>
