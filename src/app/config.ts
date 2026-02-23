@@ -19,3 +19,10 @@ export const CTA_CONVERSA = {
     "https://wa.me/5511999999999",
   openInNewTab: true,
 };
+
+/** Formulário de captura de email (Netlify Forms): name do form */
+export const FORM_EMAIL_NAME = "ebook-lead";
+
+/** Texto do botão do formulário de ebook */
+export const FORM_EMAIL_LABEL =
+  process.env.NEXT_PUBLIC_FORM_EMAIL_LABEL ?? "Receber o ebook gratuito";

@@ -3,18 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #1a1a1a;
-  --background: #faf9f6;
-  --accent: #2c5530;
-  --accent-hover: #1e3d21;
+  --foreground: #2c2416;
+  --background: #f5f0e8;
+  --sand: #e8e0d4;
+  --ochre: #b8860b;
+  --ochre-hover: #9a7209;
+  --brown: #5c4a3a;
+  --brown-light: #8b7355;
+  --accent: #b8860b;
+  --accent-hover: #9a7209;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #f0ebe3;
-    --background: #141412;
-    --accent: #6b8f71;
-    --accent-hover: #8faf94;
+    --foreground: #e8e0d4;
+    --background: #1a1612;
+    --sand: #2c2416;
+    --ochre: #d4a84b;
+    --ochre-hover: #e8bc5c;
+    --brown: #c4b5a5;
+    --brown-light: #8b7355;
+    --accent: #d4a84b;
+    --accent-hover: #e8bc5c;
   }
 }
 
@@ -27,4 +37,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Animações leves para o quiz */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-in {
+  animation: fadeSlideIn 0.35s ease-out forwards;
 }

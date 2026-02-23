@@ -7,7 +7,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        sand: "var(--sand)",
+        ochre: "var(--ochre)",
+        brown: "var(--brown)",
+      },
+      fontFamily: {
+        serif: ["var(--font-crimson)", "Georgia", "serif"],
+      },
+    },
   },
   plugins: [],
 };

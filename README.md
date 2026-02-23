@@ -28,7 +28,8 @@ npm start
 
 - **`/`** — Landing: título, subtítulo, botão "Fazer o quiz"
 - **`/quiz`** — Quiz com 15 perguntas (escala Nunca → Sempre); ao final redireciona para o resultado
-- **`/resultado?dominant=<id>`** — Exibe o logismoi dominante, frase de impacto e CTA configurável
+- **`/resultado?dominant=<id>`** — Exibe o logismoi dominante, antídoto dos Padres, formulário de email (ebook) e CTAs
+- **`/obrigado`** — Página de agradecimento após envio do email (para receber o ebook)
 
 Os 8 logismoi (nomes em português): **Gula**, **Luxúria**, **Avareza**, **Tristeza**, **Ira**, **Acídia**, **Vanaglória**, **Orgulho**.
 
@@ -70,7 +71,7 @@ Edite **`src/app/config.ts`**: altere os valores padrão de `CTA.label` e `CTA.u
 - **Nomes e frases de resultado dos logismoi:** `src/data/logismoi.ts`
 - **Landing (título e subtítulo):** `src/app/page.tsx`
 
-O quiz é apenas front-end: as respostas não são enviadas a servidor (a menos que você integre um formulário ou API depois).
+O quiz é front-end; a captura de email na página de resultado usa **Netlify Forms** (nome do form: `ebook-lead`). Após o envio, o usuário é redirecionado para `/obrigado`. No painel da Netlify, em *Forms*, você verá as submissões. Para redirecionar após o envio para `/obrigado`, configure o redirect do form em *Form settings* (ou o form já usa `action="/obrigado"`).
 
 ---
 
