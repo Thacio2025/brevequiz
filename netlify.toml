@@ -1,0 +1,5 @@
+[build]
+  command = "npm run build"
+
+# Next.js é detectado automaticamente; o adapter OpenNext cuida do deploy.
+# Node 18+ é recomendado (Site settings > Environment > Node version).

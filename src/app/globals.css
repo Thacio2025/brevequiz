@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #1a1a1a;
+  --background: #faf9f6;
+  --accent: #2c5530;
+  --accent-hover: #1e3d21;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #f0ebe3;
+    --background: #141412;
+    --accent: #6b8f71;
+    --accent-hover: #8faf94;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
