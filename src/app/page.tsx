@@ -3,9 +3,12 @@ import Link from "next/link";
 export default function LandingPage() {
   return (
     <main className="min-h-screen">
-      {/* Hero: citação + contexto */}
-      <section className="relative px-4 py-16 sm:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--sand)]/50 to-[var(--background)] pointer-events-none" />
+      {/* Hero: citação + contexto (imagem de fundo: coloque hero-deserto.jpg em public/) */}
+      <section
+        className="relative px-4 py-16 sm:py-24 overflow-hidden min-h-[70vh] flex flex-col justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url(/hero-deserto.png)" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--sand)]/60 via-[var(--sand)]/30 to-[var(--background)] pointer-events-none" />
         <div className="relative max-w-2xl mx-auto text-center space-y-8">
           <p className="text-sm uppercase tracking-widest text-[var(--brown-light)]">
             Sabedoria dos Padres do Deserto
